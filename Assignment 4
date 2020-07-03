@@ -1,0 +1,37 @@
+#1
+import itertools   
+
+d ={'1':['a','b'], '2':['c','d']}
+
+for combo in itertools.product(*[d[k] for k in sorted(d.keys())]):
+ 
+   print(''.join(combo))
+
+#2
+from collections import defaultdict, Counter
+str1 = 'w3resource' 
+
+my_dict = {}
+
+for letter in str1:
+ 
+   my_dict[letter] = my_dict.get(letter, 0) + 1
+
+print(my_dict)
+
+#3
+tup = ('e', 'x', 'e', 'r', 'c', 'i', 's', 'e', 's')
+
+str =  ''.join(tup)
+
+print(str)
+
+#4
+tup = (2, 4, 3, 5, 4, 6, 7, 8, 6, 1)
+slice = tup[3:8]
+print(slice)
+
+#5
+tup=1,2,3,4,55,66,77
+print(len(tup))
+© 2020 GitHub, Inc
